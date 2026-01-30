@@ -11,38 +11,69 @@
             padding: 0;
             line-height: 1.6;
             background-color: #f4f4f4;
+            color: #222;
         }
+
+        /* Encabezado */
         header {
             background: #0073e6;
             color: #fff;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+        }
+
+        /* Navegación */
         nav {
             background: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
+
         nav a {
             color: #fff;
             margin: 0 15px;
+            padding: 12px 18px;
             text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            background: #0073e6;
+            border-radius: 5px;
         }
+
+        /* Secciones */
         section {
             padding: 20px;
             background: #fff;
-            margin: 20px;
+            margin: 20px auto;
+            max-width: 900px;
             border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+
+        section h2 {
+            color: #0073e6;
+        }
+
+        /* Pie de página */
         footer {
             background: #0073e6;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             margin-top: 20px;
         }
     </style>
@@ -57,7 +88,8 @@
         <a href="#tema1">Tema 1</a>
         <a href="#tema2">Tema 2</a>
         <a href="#contacto">Contacto</a>
-        <a href="https://proyecto.vercel.app">Ir a la página en Vercel</a>
+        <!-- Enlace cruzado hacia tu página en Vercel -->
+        <a href="https://proyecto.vercel.app" target="_blank">Ir a la página en Vercel</a>
     </nav>
 
     <section id="tema1">
